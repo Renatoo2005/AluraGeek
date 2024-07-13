@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoAluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ALURA GEEK</h1>
+    </header>
+    <main class="container">
+        <section class="productos">
+            <h1>Mis productos</h1>
+            <!-- Aquí puedes agregar los productos con sus precios -->
+        </section>
+        <section class="agregar_producto">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="ProductoForm">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required />
+                <input type="number" id="precio" step="0.1" min="0.1" placeholder="Precio" required />
+                <input type="text" id="imagenUrl" placeholder="URL de la imagen" required />
+                <div class="btn">
+                    <button type="submit">Agregar Producto</button>
+                    <button type="button" id="borrarCampos">Borrar</button>
+                </div>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+
+        </section>
+    </main>
+    <footer>
+        <p class="texto4">Desarrollado por Renato Uipan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
